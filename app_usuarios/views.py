@@ -35,4 +35,7 @@ def logout(request):
     return render(request, 'usuarios/login.html')
 
 def dashboard(request):
-    pass
+    #if request.user.is_authenticated:
+        return render(request, '../templates/index.html')
+    #else:
+     #   return render(request, 'usuarios/login.html')
