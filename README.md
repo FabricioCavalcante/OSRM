@@ -43,6 +43,14 @@ Trazer para os setores que utilizam mais velocidade e controle no trabalho ue es
   
 <br>Bootstrap <img align="center" alt="Klima-Bootstrap" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg" />
 
+## Tarefas
+
+- [x] Cadastro de usuário
+- [x] Autenticação de usuário (login e logout)
+- [x] Cadastro de ordens de serviço
+- [x] Listagem de ordem de serviços
+- [ ] Set técnico para resolver o problema do usuário
+
 ## Instalação
 
 ## Status do Aplicativo
@@ -51,3 +59,7 @@ Trazer para os setores que utilizam mais velocidade e controle no trabalho ue es
 </h4>
 
 ## Autor
+Kelton Lima
+
+[![Linkedin Badge](https://img.shields.io/badge/-Kelton-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/kelton-lima/)](https://www.linkedin.com/in/kelton-lima/) 
+[![Gmail Badge](https://img.shields.io/badge/-kelton.lima.tec@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:kelton.lima.tec@gmail.com)](mailto:kelton.lima.tec@gmail.com)
