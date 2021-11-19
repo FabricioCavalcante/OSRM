@@ -11,13 +11,13 @@
     <div class="classynav">
         <ul>
             <li> <a href="{% url 'cadastro' %}">Cadastro</a> </li>
-            <li></li>
-            <li></li>
+            <li>{{ user.username }}</li>
+            <li> <a href="{% url 'logout' %}">Logout</a> </li>
         </ul>
     </div>
 
     <div class="col-8 m-auto pt-2 pb-2 text-center">
-        <a href="/lista"><img src="../templates/images/insert.png" class="media-object  img-responsive img-thumbnail"></a>
+        <a href="/lista"><img src="/templates/images/insert.png" class="media-object  img-responsive img-thumbnail"></a>
     </div>
 
 
