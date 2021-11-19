@@ -45,10 +45,10 @@ Trazer para os setores que utilizam mais velocidade e controle no trabalho ue es
 
 ## Tarefas
 
-- [ ] Cadastro de usuário
-- [ ] Autenticação de usuário (login e logout)
-- [ ] Cadastro de ordens de serviço
-- [ ] Listagem de ordem de serviços
+- [x] Cadastro de usuário
+- [x] Autenticação de usuário (login e logout)
+- [x] Cadastro de ordens de serviço
+- [x] Listagem de ordem de serviços
 - [ ] Set técnico para resolver o problema do usuário
 
 ## Instalação
