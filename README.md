@@ -43,6 +43,14 @@ Trazer para os setores que utilizam mais velocidade e controle no trabalho ue es
   
 <br>Bootstrap <img align="center" alt="Klima-Bootstrap" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg" />
 
+## Tarefas
+
+- [ ] Cadastro de usuário
+- [ ] Autenticação de usuário (login e logout)
+- [ ] Cadastro de ordens de serviço
+- [ ] Listagem de ordem de serviços
+- [ ] Set técnico para resolver o problema do usuário
+
 ## Instalação
 
 ## Status do Aplicativo
