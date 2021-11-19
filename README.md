@@ -59,3 +59,13 @@ Trazer para os setores que utilizam mais velocidade e controle no trabalho ue es
 </h4>
 
 ## Autor
+<a href="https://blog.rocketseat.com.br/author/thiago/">
+ <img style="border-radius: 50%;" src="https://avatars3.githubusercontent.com/u/380327?s=460&u=61b426b901b8fe02e12019b1fdb67bf0072d4f00&v=4" width="100px;" alt=""/>
+ <br />
+ <sub><b>Thiago Marinho</b></sub></a> <a href="https://blog.rocketseat.com.br/author/thiago//" title="Rocketseat">🚀</a>
+
+
+Feito com ❤️ por Thiago Marinho 👋🏽 Entre em contato!
+
+[![Linkedin Badge](https://img.shields.io/badge/-Kelton-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/kelton-lima/)](https://www.linkedin.com/in/kelton-lima/) 
+[![Gmail Badge](https://img.shields.io/badge/-kelton.lima.tec@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:kelton.lima.tec@gmail.com)](mailto:kelton.lima.tec@gmail.com)
