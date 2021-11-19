@@ -61,5 +61,5 @@ Trazer para os setores que utilizam mais velocidade e controle no trabalho ue es
 ## Autor
 Kelton Lima
 
-[![Linkedin Badge](https://img.shields.io/badge/-"Kelton Lima-blue"?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/kelton-lima/)](https://www.linkedin.com/in/kelton-lima/) 
+[![Linkedin Badge](https://img.shields.io/badge/-Kelton-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/kelton-lima/)](https://www.linkedin.com/in/kelton-lima/) 
 [![Gmail Badge](https://img.shields.io/badge/-kelton.lima.tec@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:kelton.lima.tec@gmail.com)](mailto:kelton.lima.tec@gmail.com)
