@@ -3,8 +3,7 @@ from django.http.response import HttpResponse
 from django.shortcuts import render, redirect
 from app_osrm.models import InserirDados
 from app_osrm.forms import ListaForm
-import datetime
-# Create your views here.
+
 def home(request):
     return render(request, 'index.html')
 

@@ -12,5 +12,6 @@ urlpatterns = [
     path('view/<int:pk>', view, name="view"),
     path('view/<int:pk>', view, name="view"),
     path('', include("app_usuarios.urls")),
-    path('login/', login, name="login")
+    path('login/', login, name="login"),
+    path('cadastro/', cadastro, name="cadastro"),
 ]
