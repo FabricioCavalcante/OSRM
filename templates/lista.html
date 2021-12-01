@@ -8,6 +8,47 @@
 
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            {% if user.is_authenticated %} 
+            <li class="nav-item active">
+                <a class="nav-link">Olá, {{ user.username }}!<span class="sr-only"></span></a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="{% url 'dashboard' %}">Dashboard<span class="sr-only"></span></a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="{% url 'form' %}">Requisição de Serviço<span class="sr-only"></span></a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="{% url 'lista' %}">Visualizar Requisições<span class="sr-only"></span></a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="{% url 'logout' %}">Sair<span class="sr-only"></span></a>
+            </li>
+
+            {% else %}
+            <li class="nav-item active">
+                <a class="nav-link" href="">Página Inicial<span class="sr-only"></span></a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="{% url 'login' %}">Login<span class="sr-only"></span></a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="{% url 'cadastro' %}">Cadastro<span class="sr-only"></span></a>
+            </li>
+
+            {% endif %}
+          </ul>
+        </div>
+    </nav>
     <div class="col-8 m-auto pt-2 pb-2 text-center">
         <table class="table">
             <thead class="thead-dark">

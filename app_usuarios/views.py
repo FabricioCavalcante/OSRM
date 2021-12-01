@@ -2,6 +2,7 @@ from django.http.request import HttpRequest
 from django.shortcuts import redirect, render
 from django.contrib.auth.models import User
 from django.contrib import auth
+from app_osrm.models import InserirDados
 
 def cadastro(request):
     if request.method == 'POST':

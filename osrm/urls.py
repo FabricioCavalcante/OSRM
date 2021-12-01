@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path, include
 from app_osrm.views import home, lista, form, create, view
-from app_usuarios.views import cadastro, login
+from app_usuarios.views import cadastro, login, dashboard
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -14,4 +14,5 @@ urlpatterns = [
     path('', include("app_usuarios.urls")),
     path('login/', login, name="login"),
     path('cadastro/', cadastro, name="cadastro"),
+    path('dashboard/', dashboard, name="dashboard"),
 ]

@@ -8,7 +8,87 @@
 
 </head>
 <body>
-    <div class="col-8 m-auto pt-2 pb-2 text-center">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            {% if user.is_authenticated %} 
+            <li class="nav-item active">
+                <a class="nav-link">Olá, {{ user.username }}!<span class="sr-only"></span></a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="{% url 'dashboard' %}">Dashboard<span class="sr-only"></span></a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="{% url 'form' %}">Requisição de Serviço<span class="sr-only"></span></a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="{% url 'lista' %}">Visualizar Requisições<span class="sr-only"></span></a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="{% url 'logout' %}">Sair<span class="sr-only"></span></a>
+            </li>
+
+            {% else %}
+            <li class="nav-item active">
+                <a class="nav-link" href="">Página Inicial<span class="sr-only"></span></a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="{% url 'login' %}">Login<span class="sr-only"></span></a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="{% url 'cadastro' %}">Cadastro<span class="sr-only"></span></a>
+            </li>
+
+            {% endif %}
+          </ul>
+        </div>
+    </nav>
+
+    <div class="col-4 m-auto pt-2 pb-2 text-center">
+        <form action="{% url 'form' %}" method="POST">
+            {% csrf_token %}
+            <div class="row">
+
+                <div class="col">
+                    
+                    <input name="placa_patrimonio" type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Patrimônio">
+                </div>
+
+                <div class="col">
+                    
+                    <input name="local" type="texte" class="form-control" id="exampleInputPassword1" placeholder="Local">
+                </div>
+
+                <div>
+                    <label></label>
+                </div>
+                
+            </div>
+
+            <div class="form-group">
+                
+                <textarea name="problema" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            
+            <label></label>
+
+            <div class="row">
+                <div class="col">
+                    <input type="submit" class="btn btn-success" value="Enviar Dados">
+                </div>
+            </div>    
+        </form>
+        
+    </div> 
+    
+
+    <!-- <div class="col-8 m-auto pt-2 pb-2 text-center">
         <form name="form" id="form" action="/create/" method="post">
             {% csrf_token %}
             <div class="form_group mt-4 ">Nome: {{form.nome}}</div>
@@ -18,14 +98,9 @@
             
             <div><input type="submit" class="btn btn-success" value="Enviar Dados"></div>
 
-        </form>
+        </form> -->
     
     </div>
-
-    <div class="col-8 m-auto pt-2 pb-2 text-center">
-        <a href="/" class="btn btn-info">Voltar</a>
-    </div>
-        
 </div>
 
 </body>

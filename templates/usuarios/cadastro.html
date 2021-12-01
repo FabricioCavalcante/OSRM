@@ -8,6 +8,19 @@
 
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url 'home' %}">Página Inicial<span class="sr-only"></span></a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="{% url 'login' %}">Login<span class="sr-only"></span></a>
+            </li>
+          </ul>
+        </div>
+    </nav>
     <div class="col-4 m-auto pt-2 pb-2 text-center">
         <form action="{% url 'cadastro' %}" method="POST">
             {% csrf_token %}
