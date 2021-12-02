@@ -12,6 +12,8 @@ def cadastro(request):
         senha2 = request.POST['senha2']
         if User.objects.filter(email=email).exists():
             return render(request, 'usuarios/cadastro.html')
+        if User.objects.filter(username=nome).exists():
+            return render(request, 'usuarios/cadastro.html')
         user = User.objects.create_user(username=nome, email=email, password=senha)
         user.save()
     return render(request, 'usuarios/cadastro.html')
@@ -41,3 +43,4 @@ def dashboard(request):
         return render(request, 'usuarios/dashboard.html')
     else:
         return render(request, 'usuarios/login.html')
+    

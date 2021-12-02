@@ -2,7 +2,7 @@ from django.contrib.auth.models import User
 from django.db.models.base import Model
 from django.http.response import HttpResponse
 from django.shortcuts import render, redirect, get_object_or_404
-from app_osrm.models import InserirDados
+from app_osrm.models import InserirDados, setor
 from app_osrm.forms import ListaForm
 
 def home(request):
@@ -27,11 +27,6 @@ def form(request):
     else:
         return render(request, 'form.html')
 
-# def form(request):
-#     data = {}
-#     data['form'] = ListaForm()
-#     return render(request, 'form.html', data)
-
 def create(request):
     form = ListaForm(request.POST)
     if form.is_valid():
@@ -42,3 +37,17 @@ def view(request, pk):
     data = {}
     data['db'] = InserirDados.objects.get(pk=pk)
     return render(request, 'view.html',data)
+
+def criar_setor(request):
+    if request.method == 'POST':
+        nome = request.POST['nome']
+        guardar_nome_setor = setor.objects.create(nome=nome)
+        guardar_nome_setor.save()
+    return render(request, 'setor.html')
+
+def criar_tecnico(request):
+    if request.method == 'POST':
+        nome = request.POST['nome']
+        guardar_nome_setor = setor.objects.create(nome=nome)
+        guardar_nome_setor.save()
+    return render(request, 'setor.html')

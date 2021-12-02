@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'app_osrm',
+    'app_tecnico',
     'app_usuarios',
     'django.contrib.admin',
     'django.contrib.auth',
