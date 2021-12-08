@@ -1,4 +1,5 @@
-from django.contrib.auth.models import User
+#from django.contrib.auth.models import User
+from users.models import User
 from django.db.models.base import Model
 from django.http.response import HttpResponse
 from django.shortcuts import render, redirect, get_object_or_404

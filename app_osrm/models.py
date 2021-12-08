@@ -1,6 +1,7 @@
 from django.db import models
 import datetime
-from django.contrib.auth.models import User
+#from django.contrib.auth.models import User
+from users.models import User
 
 class InserirDados(models.Model):
     nome = models.ForeignKey(User,on_delete=models.CASCADE)
